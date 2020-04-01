@@ -1,5 +1,11 @@
-for chr in `cut -f 1 refSeq_geneNames_hg38.bed | sort | uniq`;
+#!/usr/bin
+
+## Usage ./splitBed.sh input.bed
+
+input=$1
+
+for chr in `cut -f 1 $input | sort | uniq`;
 do
 	echo $chr
-	grep -w $chr refSeq_geneNames_hg38.bed > $chr.bed
+	grep -w $chr $input > $chr.bed
 done
