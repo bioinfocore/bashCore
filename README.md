@@ -17,7 +17,7 @@ cat input.txt | tr '^M' '\n' > output.txt
 ```bash
 ./splitBed.sh input.bed
 ```
-> To be edited
+> Output bed files will be in the same folder
 ---
 #### Transpose a tsv table
 ```bash
