@@ -1,4 +1,4 @@
-#!/usr/bin
+#!/bin/sh
 
 ## Usage ./splitBed.sh input.bed
 
